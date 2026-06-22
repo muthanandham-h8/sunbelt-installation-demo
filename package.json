@@ -1,0 +1,27 @@
+{
+  "name": "installation-app",
+  "version": "1.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "sh scripts/with-android-env.sh expo start --port 8084",
+    "android": "sh scripts/with-android-env.sh expo run:android --port 8084",
+    "android:build": "sh scripts/with-android-env.sh sh -c 'cd android && ./gradlew assembleDebug'",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "^54.0.0",
+    "expo-auth-session": "~7.0.11",
+    "expo-secure-store": "~15.0.8",
+    "expo-web-browser": "~15.0.11",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "babel-preset-expo": "^54.0.0"
+  }
+}
