@@ -1,0 +1,11 @@
+{
+  "name": "installation-mock-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mock API serving device and job data for the Sunbelt Installer app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  }
+}

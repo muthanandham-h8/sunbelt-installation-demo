@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "deviceName": "PUI Device",
+    "serialNumber": "SN-1001",
+    "status": "Pending",
+    "model": "PUI-X200",
+    "firmwareVersion": "2.4.1",
+    "location": "Site B",
+    "technician": "Arun Kumar",
+    "installedDate": null
+  },
+  {
+    "id": 2,
+    "deviceName": "GPS Tracker",
+    "serialNumber": "SN-1002",
+    "status": "Installed",
+    "model": "GT-500",
+    "firmwareVersion": "1.9.0",
+    "location": "Site A",
+    "technician": "Arun Kumar",
+    "installedDate": "2026-06-21"
+  },
+  {
+    "id": 3,
+    "deviceName": "Temperature Sensor",
+    "serialNumber": "SN-1003",
+    "status": "Failed",
+    "model": "TS-30",
+    "firmwareVersion": "3.1.2",
+    "location": "Site D",
+    "technician": "Priya Nair",
+    "installedDate": null
+  },
+  {
+    "id": 4,
+    "deviceName": "Pressure Monitor",
+    "serialNumber": "SN-1004",
+    "status": "Installed",
+    "model": "PM-110",
+    "firmwareVersion": "2.0.5",
+    "location": "Site A",
+    "technician": "Priya Nair",
+    "installedDate": "2026-06-18"
+  },
+  {
+    "id": 5,
+    "deviceName": "Flow Meter",
+    "serialNumber": "SN-1005",
+    "status": "Pending",
+    "model": "FM-7",
+    "firmwareVersion": "1.2.0",
+    "location": "Site C",
+    "technician": "Arun Kumar",
+    "installedDate": null
+  },
+  {
+    "id": 6,
+    "deviceName": "Vibration Sensor",
+    "serialNumber": "SN-1006",
+    "status": "Installed",
+    "model": "VS-90",
+    "firmwareVersion": "4.0.0",
+    "location": "Site B",
+    "technician": "Mohan Das",
+    "installedDate": "2026-06-24"
+  },
+  {
+    "id": 7,
+    "deviceName": "Humidity Sensor",
+    "serialNumber": "SN-1007",
+    "status": "Failed",
+    "model": "HS-22",
+    "firmwareVersion": "2.2.3",
+    "location": "Site C",
+    "technician": "Mohan Das",
+    "installedDate": null
+  }
+]

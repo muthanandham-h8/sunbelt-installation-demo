@@ -7,6 +7,7 @@
     "start": "sh scripts/with-android-env.sh expo start --port 8084",
     "android": "sh scripts/with-android-env.sh expo run:android --port 8084",
     "android:build": "sh scripts/with-android-env.sh sh -c 'cd android && ./gradlew assembleDebug'",
+    "android:build:release": "sh scripts/with-android-env.sh sh -c 'cd android && ./gradlew assembleRelease'",
     "ios": "expo run:ios",
     "web": "expo start --web"
   },

@@ -26,8 +26,8 @@ const JOBS_API_URL   = process.env.EXPO_PUBLIC_JOBS_API_URL;
 const oktaConfig = {
   issuer:         process.env.EXPO_PUBLIC_OKTA_ISSUER,
   clientId:       process.env.EXPO_PUBLIC_OKTA_CLIENT_ID,
-  scopes:         (process.env.EXPO_PUBLIC_OKTA_SCOPES || 'openid profile email').split(' ').filter(Boolean),
-  redirectScheme: process.env.EXPO_PUBLIC_OKTA_REDIRECT_SCHEME || 'installationapp'
+  scopes:         (process.env.EXPO_PUBLIC_OKTA_SCOPES || 'openid profile email groups').split(' ').filter(Boolean),
+  redirectScheme: process.env.EXPO_PUBLIC_OKTA_REDIRECT_SCHEME || 'com.installationapp'
 };
 
 // ─── Mock data (fallback when API URL is not set) ───────────────────
@@ -74,11 +74,19 @@ function isOktaConfigured() {
 function createOktaDiscovery(issuer) {
   if (!issuer) return null;
   const base = issuer.replace(/\/$/, '');
+  // Okta exposes two kinds of authorization server, and their endpoints
+  // live in different places:
+  //   • Org server    → issuer is the bare domain (https://x.okta.com);
+  //                      endpoints are under /oauth2/v1/*
+  //   • Custom server → issuer ends in /oauth2/<id> (e.g. /oauth2/default);
+  //                      endpoints are under <issuer>/v1/*
+  // Normalise to the right root so either issuer style works.
+  const root = /\/oauth2(\/|$)/.test(base) ? base : `${base}/oauth2`;
   return {
-    authorizationEndpoint: `${base}/v1/authorize`,
-    tokenEndpoint:         `${base}/v1/token`,
-    revocationEndpoint:    `${base}/v1/revoke`,
-    userInfoEndpoint:      `${base}/v1/userinfo`
+    authorizationEndpoint: `${root}/v1/authorize`,
+    tokenEndpoint:         `${root}/v1/token`,
+    revocationEndpoint:    `${root}/v1/revoke`,
+    userInfoEndpoint:      `${root}/v1/userinfo`
   };
 }
 

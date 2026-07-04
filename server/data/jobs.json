@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Install GPS Tracker",
+    "status": "In Progress",
+    "location": "Site A",
+    "priority": "High",
+    "assignedTo": "Arun Kumar",
+    "scheduledDate": "2026-06-29",
+    "deviceId": 2
+  },
+  {
+    "id": 2,
+    "title": "Setup PUI Device",
+    "status": "Pending",
+    "location": "Site B",
+    "priority": "Medium",
+    "assignedTo": "Arun Kumar",
+    "scheduledDate": "2026-06-30",
+    "deviceId": 1
+  },
+  {
+    "id": 3,
+    "title": "Configure Flow Meter",
+    "status": "Completed",
+    "location": "Site C",
+    "priority": "Low",
+    "assignedTo": "Mohan Das",
+    "scheduledDate": "2026-06-25",
+    "deviceId": 5
+  },
+  {
+    "id": 4,
+    "title": "Replace Pressure Monitor",
+    "status": "Pending",
+    "location": "Site A",
+    "priority": "High",
+    "assignedTo": "Priya Nair",
+    "scheduledDate": "2026-07-01",
+    "deviceId": 4
+  },
+  {
+    "id": 5,
+    "title": "Fix Temperature Sensor",
+    "status": "Failed",
+    "location": "Site D",
+    "priority": "High",
+    "assignedTo": "Priya Nair",
+    "scheduledDate": "2026-06-27",
+    "deviceId": 3
+  },
+  {
+    "id": 6,
+    "title": "Calibrate Temp Sensor",
+    "status": "Completed",
+    "location": "Site B",
+    "priority": "Medium",
+    "assignedTo": "Mohan Das",
+    "scheduledDate": "2026-06-23",
+    "deviceId": 3
+  },
+  {
+    "id": 7,
+    "title": "Install New Flow Meter",
+    "status": "In Progress",
+    "location": "Site C",
+    "priority": "Medium",
+    "assignedTo": "Arun Kumar",
+    "scheduledDate": "2026-06-29",
+    "deviceId": 5
+  },
+  {
+    "id": 8,
+    "title": "Inspect Vibration Sensor",
+    "status": "Completed",
+    "location": "Site B",
+    "priority": "Low",
+    "assignedTo": "Mohan Das",
+    "scheduledDate": "2026-06-24",
+    "deviceId": 6
+  }
+]

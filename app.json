@@ -2,7 +2,7 @@
   "expo": {
     "name": "Installation App",
     "slug": "installation-app",
-    "scheme": "installationapp",
+    "scheme": "com.installationapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
